@@ -7,7 +7,7 @@
 
 		<uses-library android:name="com.google.android.maps" />
 
-		<activity android:name=".HelloAndroidActivity">
+		<activity android:name=".AndroidFromScratchActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />

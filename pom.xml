@@ -68,6 +68,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -85,7 +86,6 @@
 			<groupId>de.akquinet.android.androlog</groupId>
 			<artifactId>androlog</artifactId>
 		</dependency>
-
 	</dependencies>
 
 	<build>
