@@ -23,7 +23,6 @@
             android:layout_height="wrap_content"
             android:text="@string/search_button" />
     </LinearLayout>
-
     <com.google.android.maps.MapView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/map"
@@ -31,8 +30,9 @@
         android:layout_height="380px"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/header"
-        android:apiKey="0wGHQZmAJv4fRx3OwKOLNkdDPJbd6uzUbJssgKg"
+        android:apiKey="0wGHQZmAJv4dsqGZJ7_OCkOcZT7-UxNEFZ4Snag"
         android:clickable="true" />
+    
 
     <RelativeLayout
         android:id="@+id/footer"
@@ -68,7 +68,7 @@
         android:id="@+id/map"
         android:layout_width="fill_parent"
         android:layout_height="320px"
-        android:apiKey="0wGHQZmAJv4ehdyuKvnujiovUqXPFctTfvwtB5w"
+        android:apiKey="0wGHQZmAJv4dsknOTQzdSl6MyHbxLaU7JZb9Ekw"
         android:clickable="true" />
     -->
 

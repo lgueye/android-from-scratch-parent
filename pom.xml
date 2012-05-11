@@ -30,10 +30,20 @@
 		<proguard-maven-plugin.version>2.0.4</proguard-maven-plugin.version>
 		<proguard.version>4.4</proguard.version>
 		<java.version>1.6</java.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+<!-- 
+		<sign.keystore>~/.android/diveintojee.keystore</sign.keystore>
+		<sign.alias>diveintojee</sign.alias>
+		<sign.keypass>k1m0n3kh</sign.keypass>
+		<sign.storepass>k1m0n3kh</sign.storepass>
+ -->
 	</properties>
+
+	<scm>
+		<connection>scm:git:ssh://git@github.com:lgueye/android-from-scratch-parent.git</connection>
+		<url>git:ssh://git@github.com:lgueye/android-from-scratch-parent.git</url>
+	</scm>
 
 	<dependencyManagement>
 		<dependencies>
@@ -71,7 +81,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
