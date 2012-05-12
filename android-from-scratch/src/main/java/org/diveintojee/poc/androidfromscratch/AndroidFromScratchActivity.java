@@ -140,7 +140,7 @@ public class AndroidFromScratchActivity extends MapActivity implements OnClickLi
         zoomInButton.setOnClickListener(this);
         final Button zoomOutButton = (Button) findViewById(R.id.zoomout);
         zoomOutButton.setOnClickListener(this);
-        final Button centerMapButton = (Button) findViewById(R.id.center_map);
+        final Button centerMapButton = (Button) findViewById(R.id.centermap);
         centerMapButton.setOnClickListener(this);
     }
 
@@ -168,7 +168,7 @@ public class AndroidFromScratchActivity extends MapActivity implements OnClickLi
             case R.id.zoomout:
                 onZoomOutButtonClick();
                 break;
-            case R.id.center_map:
+            case R.id.centermap:
                 onCenterMapButtonClick();
                 break;
         }

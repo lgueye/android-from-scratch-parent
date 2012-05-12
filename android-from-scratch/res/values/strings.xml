@@ -4,7 +4,7 @@
     <string name="app_name">android-from-scratch</string>
     <string name="zoom_in">+</string>
     <string name="zoom_out">-</string>
-    <string name="search_button">Search</string>
-    <string name="center_button">center</string>
+    <string name="search">Search</string>
+    <string name="center">center</string>
     <string name="location_hint">Enter a location here</string>
 </resources>

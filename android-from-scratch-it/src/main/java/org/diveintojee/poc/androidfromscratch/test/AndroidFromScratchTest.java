@@ -28,7 +28,7 @@ public class AndroidFromScratchTest extends ActivityInstrumentationTestCase2<And
         assertNotNull(zoomInButton);
         final Button zoomOutButton = (Button) activity.findViewById(R.id.zoomout);
         assertNotNull(zoomOutButton);
-        final Button centerButton = (Button) activity.findViewById(R.id.center_map);
+        final Button centerButton = (Button) activity.findViewById(R.id.centermap);
         assertNotNull(centerButton);
     }
 }
