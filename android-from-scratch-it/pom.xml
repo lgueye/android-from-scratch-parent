@@ -16,7 +16,7 @@
 	<properties>
 		<!-- When not running a release, we are deploying the plain artifact (so 
 			no classifier) This is overridden during the release. -->
-		<zipaligned-classifier></zipaligned-classifier>
+		<zipaligned-classifier>aligned</zipaligned-classifier>
 	</properties>
 
 	<dependencies>
@@ -38,47 +38,62 @@
 			<version>${project.parent.version}</version>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
-				<artifactId>android-maven-plugin</artifactId>
-				<extensions>true</extensions>
-			</plugin>
-		</plugins>
-	</build>
-
 	<profiles>
 		<profile>
-			<id>release</id>
-			<properties>
-				<!-- When running a release, we must deployed the final artifact (signed 
-					and zipaligned). -->
-				<zipaligned-classifier>aligned</zipaligned-classifier>
-			</properties>
+			<id>android-debug</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
 			<build>
 				<plugins>
 					<plugin>
-						<artifactId>maven-jarsigner-plugin</artifactId>
+						<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+						<artifactId>android-maven-plugin</artifactId>
 						<executions>
 							<execution>
-								<id>sign-application-it-apk</id>
-								<phase>package</phase>
+								<id>redeploy</id>
+								<phase>pre-integration-test</phase>
 								<goals>
-									<goal>sign</goal>
+									<goal>undeploy</goal>
+									<goal>deploy</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>run-it-tests</id>
+								<phase>integration-test</phase>
+								<goals>
+									<goal>instrument</goal>
 								</goals>
 							</execution>
 						</executions>
 					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>android-release-prepare</id>
+			<build>
+				<plugins>
 					<plugin>
 						<groupId>com.jayway.maven.plugins.android.generation2</groupId>
 						<artifactId>android-maven-plugin</artifactId>
-						<configuration>
-							<sign>
-								<debug>false</debug>
-							</sign>
-						</configuration>
+						<executions>
+							<execution>
+								<id>redeploy</id>
+								<phase>pre-integration-test</phase>
+								<goals>
+									<goal>undeploy</goal>
+									<goal>deploy</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>run-it-tests</id>
+								<phase>integration-test</phase>
+								<goals>
+									<goal>instrument</goal>
+								</goals>
+							</execution>
+						</executions>
 					</plugin>
 				</plugins>
 			</build>

@@ -15,11 +15,19 @@
 			
 	</LinearLayout>
 	
+<!-- 	
 	<com.google.android.maps.MapView
 		xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/map"
 		android:layout_width="fill_parent" android:layout_height="380px"
 		android:layout_alignParentLeft="true" android:layout_below="@id/header"
-		android:apiKey="0wGHQZmAJv4fMgJK7izfiUnecUHq_Qw0ivd-LBA"
+		android:apiKey="0wGHQZmAJv4d-W3pP_37e_LwNrifmfI8j4P-okw"
+		android:clickable="true" />
+ -->		
+	<com.google.android.maps.MapView
+		xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/map"
+		android:layout_width="fill_parent" android:layout_height="380px"
+		android:layout_alignParentLeft="true" android:layout_below="@id/header"
+		android:apiKey="${sign.maps.key}"
 		android:clickable="true" />
 
 	<RelativeLayout android:id="@+id/footer"
@@ -39,9 +47,5 @@
 			android:text="@string/zoom_in" />
 
 	</RelativeLayout>
-	<!-- <com.google.android.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android" 
-		android:id="@+id/map" android:layout_width="fill_parent" android:layout_height="320px" 
-		android:apiKey="0wGHQZmAJv4dsknOTQzdSl6MyHbxLaU7JZb9Ekw" android:clickable="true" 
-		/> -->
 
 </RelativeLayout>
