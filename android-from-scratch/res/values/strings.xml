@@ -6,5 +6,5 @@
     <string name="zoom_out">-</string>
     <string name="search">Search</string>
     <string name="center">center</string>
-    <string name="location_hint">Enter a location here</string>
+    <string name="location_hint">Enter a location here!</string>
 </resources>
