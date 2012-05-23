@@ -9,7 +9,7 @@
 	</application>
 
 	<instrumentation android:targetPackage="org.diveintojee.poc.androidfromscratch"
-		android:name="android.test.InstrumentationTestRunner" />
+		android:name="android.test.InstrumentationTestRunner" android:label="Tests for Android from scratch app." />
 
 </manifest>
 

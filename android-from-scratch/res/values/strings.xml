@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello android-from-scratch!</string>
-    <string name="app_name">android-from-scratch</string>
+    <string name="hello">Hello ${app.name}</string>
+    <string name="app_name">${app.name}</string>
     <string name="zoom_in">+</string>
     <string name="zoom_out">-</string>
     <string name="search">Search</string>
