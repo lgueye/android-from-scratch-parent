@@ -78,7 +78,7 @@
 						<!--<skip>true|false|auto</skip> -->
 						<!--<instrumentationPackage>packageName</instrumentationPackage> -->
 						<!--<instrumentationRunner>className</instrumentationRunner> -->
-						<debug>true</debug>
+						<!--<debug>true|false</debug>-->
 						<!--<coverage>true|false</coverage> -->
 						<!--<logonly>true|false</logonly> avd -->
 						<!--<testsize>small|medium|large</testsize> -->
@@ -94,24 +94,8 @@
 						<debug>false</debug>
 					</sign>
 				</configuration>
-				<executions></executions>
 			</plugin>
 		</plugins>
 	</build>
-	<profiles>
-		<profile>
-			<id>android-debug</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<sign.keystore>~/.android/debug.keystore</sign.keystore>
-				<sign.alias>androiddebugkey</sign.alias>
-				<sign.keypass>android</sign.keypass>
-				<sign.storepass>android</sign.storepass>
-				<sign.maps.key>0wGHQZmAJv4d-W3pP_37e_LwNrifmfI8j4P-okw</sign.maps.key>
-			</properties>
-		</profile>
-	</profiles>
 
 </project>

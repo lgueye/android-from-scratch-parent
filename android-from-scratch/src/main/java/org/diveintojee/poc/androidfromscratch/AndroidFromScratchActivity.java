@@ -101,7 +101,7 @@ public class AndroidFromScratchActivity extends MapActivity implements OnClickLi
     private void handleNewLocation(final GeoPoint foundLocation, final String locationName,
             final String locationDescription) {
         Log.d(TAG, "handleNewLocation");
-        mapView.invalidate();
+        //mapView.invalidate();
         animateToLocation(foundLocation, 16);
         addMarkerToLocation(foundLocation, locationName, locationDescription);
         lastLocation = foundLocation;
