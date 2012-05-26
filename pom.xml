@@ -4,7 +4,7 @@
 
 	<groupId>org.diveintojee.poc</groupId>
 	<artifactId>android-from-scratch-parent</artifactId>
-	<version>0.1</version>
+	<version>0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>android-from-scratch - Parent</name>
 
