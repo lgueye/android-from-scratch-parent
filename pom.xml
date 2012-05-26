@@ -36,8 +36,8 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git:ssh://git@github.com:lgueye/android-from-scratch-parent.git</connection>
-		<url>git:ssh://git@github.com:lgueye/android-from-scratch-parent.git</url>
+		<connection>scm:git:git@github.com:lgueye/android-from-scratch-parent.git</connection>
+		<url>scm:git:git@github.com:lgueye/android-from-scratch-parent.git</url>
 	</scm>
 
 	<dependencyManagement>
